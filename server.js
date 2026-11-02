@@ -43,7 +43,7 @@ app.post('/api/books', (req, res) => {
   res.status(201).json({ message: 'Book added successfully', book: newBook });
 });
 
-
+//  search books 
 app.get('/api/books/search', (req, res) => {
   const { title, author, category } = req.query;
 
